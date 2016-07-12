@@ -32,12 +32,9 @@ header {
   z-index: 100;
 }
 
-header h1 {
-  color: white;
+header a {
+  padding: 10px;
   float: left;
-  font-size: 1.25em;
-  line-height: 1.25em;
-  font-weight: 100;
   margin: 0;
 }
 
@@ -113,7 +110,7 @@ header li a:hover {
 
 .main_img p {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 100;
   padding-top: 20px;
 }
@@ -131,16 +128,19 @@ header li a:hover {
 #section_core ul {
   overflow: hidden;
   margin: 0;
-  padding: 0 0 40px 0;
+  padding: 10px 0 40px 0;
 }
 
 #section_core li{
+  overflow: hidden;
   width: 76%;
+  height: 250px;
   margin: auto;
 }
 
 #section_core li .sub_text {
   width: 50%;
+  margin: 40px 0;
   text-align: center;
 }
 
@@ -159,8 +159,27 @@ header li a:hover {
 }
 
 #section_core li .sub_img {
-  width: 50%;
-  padding: 10px;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.st1 {
+  animation: st1 4s ease infinite;
+}
+
+@keyframes st1{
+  0% {
+    transform:  rotate(0deg) ;
+    transform-origin: center;
+  }
+  50% {
+    transform:  rotate(180deg) ;
+    transform-origin: center;
+  }
+  100% {
+    transform:  rotate(360deg) ;
+    transform-origin: center;
+  }
 }
 
 #section_features h2 {
@@ -235,20 +254,22 @@ header li a:hover {
   font-size: 1.4em;
   font-weight: 600;
   line-height: 2.2em;
+  color: #535353;
 }
 
 #section_features li figcaption p {
   font-size: 1em;
   line-height: 1.6em;
+  color: #898989;
 }
 
-#section_partners {
+#section_partners_yfg {
   position: relative;
   background: url("../img/yfg_bg.png") center center no-repeat;
   background-size: cover;
 }
 
-#section_partners h2 {
+#section_partners_yfg h2 {
   margin: 0;
   padding: 28px 0;
   background-color: white;
@@ -258,44 +279,87 @@ header li a:hover {
   font-weight: 200;
 }
 
-#section_partners ul {
-  padding: 200px 0;
+#section_partners_yfg ul {
+  padding: 140px 0;
 }
 
-#section_partners li {}
+#section_partners_yfg li {}
 
-#section_partners li figure {
+#section_partners_yfg li figure {
   width: 76%;
   margin: auto;
 }
 
-#section_partners li figure figcaption {
+#section_partners_yfg li figure figcaption {
   width: 54%;
   color: white;
 }
 
-/*
-#section_partners li figure figcaption .short_border {
-  margin-top: 20px;
-  width: 80px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-*/
-
-#section_partners li figure figcaption p {
+#section_partners_yfg li figure figcaption p {
   padding-top: 10px;
   font-size: 1em;
   font-weight: 100;
   line-height: 1.6em;
 }
 
-#section_partners li figure figcaption p::before {
+#section_partners_yfg li figure figcaption p::before {
   content: '';
   display: block;
   margin: 10px 0 18px;
   width: 80px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+#section_partners_coinone {
+  position: relative;
+  background: url("../img/coinone_bg.png") center center no-repeat;
+  background-size: cover;
+}
+
+#section_partners_coinone h2 {
+  margin: 0;
+  padding: 28px 0;
+  background-color: white;
+  color: #343333;
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 200;
+}
+
+#section_partners_coinone ul {
+  padding: 160px 0;
+}
+
+#section_partners_coinone li {}
+
+#section_partners_coinone li figure {
+  width: 76%;
+  margin: auto;
+}
+
+#section_partners_coinone li figure figcaption {
+  width: 54%;
+  color: white;
+}
+
+#section_partners_coinone li figure figcaption p {
+  padding-top: 10px;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.6em;
+}
+
+#section_partners_coinone li figure figcaption p::before {
+  content: '';
+  display: block;
+  margin: 8px 0 18px;
+  width: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
 
 
 footer {
