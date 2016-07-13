@@ -8,6 +8,16 @@ a{
   text-decoration: none;
 }
 
+.align_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  text-align: center;
+  color: #FFF;
+  z-index: 2;
+}
 
 .float_left {
   float: left;
@@ -17,14 +27,10 @@ a{
   float: right;
 }
 
+/*-----------header------------*/
+
 header {
   position: fixed;
-  /*
-  overflow: hidden;
-  position: fixed; 
-            absolute; 
-  등의 클리어 픽스를 해줘야 background가 렌더링 된다.
-  */
   top:   0;
   left:  0;
   right: 0;
@@ -51,7 +57,7 @@ header nav {
 header nav ul {
   overflow: hidden;
   padding: 0;
-  margin: 0;
+  margin:  0;
 }
 
 header nav li {
@@ -71,22 +77,13 @@ header li a:hover {
   color: lightgray;
 }
 
+/*-----------main------------*/
+
 .main_img {
   position: relative;
   padding-top: 50%;
   background: url("../img/main_header.png") center center no-repeat;
   background-size: 111%;
-}
-
-.align_center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform:translate(-50%, -50%);
-  transform:translate(-50%, -50%);
-  text-align: center;
-  color: #FFF;
-  z-index: 2;
 }
 
 .main_img::after {
@@ -115,7 +112,9 @@ header li a:hover {
   padding-top: 20px;
 }
 
-#section_core h2 {
+/*-----------technology------------*/
+
+.section_technology h2 {
   margin: 0;
   padding: 28px 0;
   background-color: white;
@@ -125,43 +124,240 @@ header li a:hover {
   font-weight: 200;
 }
 
-#section_core ul {
+.section_technology ul {
   overflow: hidden;
   margin: 0;
-  padding: 10px 0 40px 0;
+  padding: 10px 0 30px 0;
 }
 
-#section_core li{
+.section_technology li{
   overflow: hidden;
   width: 76%;
-  height: 250px;
+  padding-bottom: 10px;
   margin: auto;
 }
 
-#section_core li .sub_text {
+.section_technology li .sub_text {
   width: 50%;
-  margin: 40px 0;
+  margin: 20px 0;
   text-align: center;
 }
 
-#section_core li .sub_text strong {
+.section_technology li .sub_text strong {
   font-size: 1.2em;
   font-weight: 600;
   line-height: 2.6em;
   color: #535353;
 }
 
-#section_core li .sub_text p {
+.section_technology li .sub_text p {
   font-size: 1em;
   font-weight: 200;
   line-height: 1.6em;
   color: #898989;
 }
 
-#section_core li .sub_img {
+.section_technology li .sub_img {
   text-align: center;
   padding-top: 60px;
 }
+
+/*-----------features------------*/
+
+.feature_wrapper{
+  width: 90%;
+  margin: auto;
+}
+
+.section_features h2 {
+  margin: 0;
+  padding: 28px 0;
+  background-color: white;
+  color: #343333;
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 200;
+  border-top: 1px solid #f2f2f2;
+}
+
+.section_features ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.section_features li {
+  width: 50%;
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+.section_features li figure {
+  width: 100%;
+  padding-top: 80%;
+  margin: 0;
+  color: #343333;
+  background-color: rgba(0, 0, 0, 0.015);
+  transition: 0.4s all ease;
+}
+
+.section_features li figure:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.section_features li figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.section_features li figcaption strong {
+  display: block;
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 2.2em;
+  color: #535353;
+}
+
+.section_features li figcaption p {
+  width: 94%;
+  margin: auto;
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #898989;
+  text-align: left;
+}
+
+.section_features li figcaption p:First-of-type {
+  color: #535353;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/*-----------partners------------*/
+
+.section_partners_yfg {
+  position: relative;
+  background: url("../img/yfg_bg.png") center center no-repeat;
+  background-size: cover;
+}
+
+.section_partners_yfg h2 {
+  margin: 0;
+  padding: 28px 0;
+  background-color: white;
+  color: #343333;
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 200;
+}
+
+.section_partners_yfg ul {
+  padding: 140px 0;
+}
+
+.section_partners_yfg li {}
+
+.section_partners_yfg li figure {
+  width: 76%;
+  margin: auto;
+}
+
+.section_partners_yfg li figure figcaption {
+  width: 54%;
+  color: white;
+}
+
+.section_partners_yfg li figure figcaption p {
+  padding-top: 10px;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.6em;
+}
+
+.section_partners_yfg li figure figcaption p::before {
+  content: '';
+  display: block;
+  margin: 10px 0 18px;
+  width: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.section_partners_coinone {
+  position: relative;
+  background: url("../img/coinone_bg.png") center center no-repeat;
+  background-size: cover;
+}
+
+.section_partners_coinone h2 {
+  margin: 0;
+  padding: 28px 0;
+  background-color: white;
+  color: #343333;
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 200;
+}
+
+.section_partners_coinone ul {
+  padding: 160px 0;
+}
+
+.section_partners_coinone li {}
+
+.section_partners_coinone li figure {
+  width: 76%;
+  margin: auto;
+}
+
+.section_partners_coinone li figure figcaption {
+  width: 54%;
+  color: white;
+}
+
+.section_partners_coinone li figure figcaption p {
+  padding-top: 10px;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.6em;
+}
+
+.section_partners_coinone li figure figcaption p::before {
+  content: '';
+  display: block;
+  margin: 8px 0 18px;
+  width: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*-----------footer------------*/
+
+footer {
+  height: 300px;
+  background-color: #20232C;
+  border-top: 10px solid #3A3E50;
+}
+
+footer img {
+  padding: 40px 20px;
+  opacity: 0.2;
+}
+
+footer div p {
+  padding: 20px;
+  font-size: 1em;
+  color: dimgray;
+  font-weight: 200;
+}
+
+/*------------animation------------*/
 
 .st1 {
   animation: st1 4s ease infinite;
@@ -182,188 +378,171 @@ header li a:hover {
   }
 }
 
-#section_features h2 {
-  margin: 0;
-  padding: 28px 0;
-  background-color: white;
-  color: #343333;
-  text-align: center;
-  font-size: 1.9em;
-  font-weight: 200;
-  border-top: 1px solid #f2f2f2;
+.niddle {
+  animation: niddle 2.3s ease infinite;
 }
 
-#section_features ul {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+@keyframes niddle{
+  0% {
+    transform:  rotate(90deg) ;
+    transform-origin: 70% 70%;
+  }
+  50% {
+    transform:  rotate(150deg) ;
+    transform-origin: 70% 70%;
+  }
+  100% {
+    transform:  rotate(90deg) ;
+    transform-origin: 70% 70%;
+  }
 }
 
-#section_features li {
-  width: 50%;
-  float: left;
-  list-style: none;
-  position: relative;
+.block1 {
+  animation: block1 4s ease infinite;
 }
 
-#section_features li:first-child {
-  background: url("") center center no-repeat;
-  background-size: cover;
+@keyframes block1 {
+  0% {transform: translateY(0px);}
+  
+  50% {transform: translateY(12px);}
+  
+  75% {transform: translateY(12px);}
+  
+  100% {transform: translateY(0px);}
 }
 
-#section_features li:nth-child(2) {
-  background: url("") center center no-repeat;
-  background-size: cover;
+.block2 {
+  animation: block2 4s ease infinite;
 }
 
-#section_features li:nth-child(3) {
-  background: url("") center center no-repeat;
-  background-size: cover;
+@keyframes block2 {
+  0% {transform: translateY(0px);}
+  
+  50% {transform: translateY(16px);}
+  
+  75% {transform: translateY(23px);}
+  
+  100% {transform: translateY(0px);}
 }
 
-#section_features li:last-child {
-  background: url("") center center no-repeat;
-  background-size: cover;
+/*------------meadia query------------*/
+
+@media (max-width: 992px) {
+  /*---technology---*/  
+  .section_technology li{
+    overflow: hidden;
+    width: 90%;
+    padding-bottom: 10px;
+    margin: auto;
+  }
+  /*---features---*/
+    .feature_wrapper{
+    width: 100%;
+    margin: auto;
+  }
+
+  .section_features li figure {
+    width: 100%;
+    padding-top: 100%;
+    margin: 0;
+    color: #343333;
+    background-color: rgba(0, 0, 0, 0.015);
+    transition: 0.4s all ease;
+  }
+
+  .section_features li figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+  }
+
+  .section_features li figcaption strong {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 2.2em;
+    color: #535353;
+  }
+
+  .section_features li figcaption p {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    color: #898989;
+    text-align: center;
+  }
+
+  .section_features li figcaption p:First-of-type {
+    font-size: 1em;
+    color: #535353;
+    text-align: center;
+    padding-bottom: 10px;
+  }
 }
 
-#section_features li figure {
-  width: 100%;
-  padding-top: 70%;
-  margin: 0;
-  color: #343333;
-  background-color: #FAFAFA;
-  transition: 0.4s all ease;
-}
+@media (max-width: 768px) {
+    /*---features---*/
+    .feature_wrapper{
+    width: 100%;
+    margin: auto;
+  }
 
-#section_features li figure:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  text-align: center;
-}
+  .section_features li {
+    width: 100%;
+    float: left;
+    list-style: none;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
-#section_features li figcaption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform:translate(-50%, -50%);
-  transform:translate(-50%, -50%);
-  text-align: center;
-  z-index: 2;
-}
+  .section_features li figure {
+    width: 100%;
+    padding-top: 50%;
+    margin: 0;
+    color: #343333;
+    background-color: rgba(0, 0, 0, 0.015);
+    transition: 0.4s all ease;
+  }
 
-#section_features li figcaption strong {
-  font-size: 1.4em;
-  font-weight: 600;
-  line-height: 2.2em;
-  color: #535353;
-}
+  .section_features li figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 68%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+  }
 
-#section_features li figcaption p {
-  font-size: 1em;
-  line-height: 1.6em;
-  color: #898989;
-}
+  .section_features li figcaption p {
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #898989;
+  }
+  
+  /*---partners---*/
+  .section_partners_yfg ul {
+    padding: 100px 0;
+  }
 
-#section_partners_yfg {
-  position: relative;
-  background: url("../img/yfg_bg.png") center center no-repeat;
-  background-size: cover;
-}
+  .section_partners_yfg li figure figcaption {
+    width: 90%;
+    margin: auto;
+    color: white;
+  }
 
-#section_partners_yfg h2 {
-  margin: 0;
-  padding: 28px 0;
-  background-color: white;
-  color: #343333;
-  text-align: center;
-  font-size: 1.9em;
-  font-weight: 200;
-}
+  .section_partners_coinone ul {
+    padding: 100px 0;
+  }
 
-#section_partners_yfg ul {
-  padding: 140px 0;
-}
-
-#section_partners_yfg li {}
-
-#section_partners_yfg li figure {
-  width: 76%;
-  margin: auto;
-}
-
-#section_partners_yfg li figure figcaption {
-  width: 54%;
-  color: white;
-}
-
-#section_partners_yfg li figure figcaption p {
-  padding-top: 10px;
-  font-size: 1em;
-  font-weight: 100;
-  line-height: 1.6em;
-}
-
-#section_partners_yfg li figure figcaption p::before {
-  content: '';
-  display: block;
-  margin: 10px 0 18px;
-  width: 80px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-#section_partners_coinone {
-  position: relative;
-  background: url("../img/coinone_bg.png") center center no-repeat;
-  background-size: cover;
-}
-
-#section_partners_coinone h2 {
-  margin: 0;
-  padding: 28px 0;
-  background-color: white;
-  color: #343333;
-  text-align: center;
-  font-size: 1.9em;
-  font-weight: 200;
-}
-
-#section_partners_coinone ul {
-  padding: 160px 0;
-}
-
-#section_partners_coinone li {}
-
-#section_partners_coinone li figure {
-  width: 76%;
-  margin: auto;
-}
-
-#section_partners_coinone li figure figcaption {
-  width: 54%;
-  color: white;
-}
-
-#section_partners_coinone li figure figcaption p {
-  padding-top: 10px;
-  font-size: 1em;
-  font-weight: 100;
-  line-height: 1.6em;
-}
-
-#section_partners_coinone li figure figcaption p::before {
-  content: '';
-  display: block;
-  margin: 8px 0 18px;
-  width: 80px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-
-
-
-
-
-footer {
-  height: 300px;
-  background-color: #20232C;
-  border-top: 10px solid #3A3E50;
+  .section_partners_coinone li figure figcaption {
+    width: 90%;
+    margin: auto;
+    color: white;
+  }
 }
