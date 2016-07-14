@@ -232,10 +232,10 @@ header li a:hover {
 .section_features li figcaption p {
   width: 94%;
   margin: auto;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1.6em;
   color: #898989;
-  text-align: left;
+  text-align: center;
 }
 
 .section_features li figcaption p:First-of-type {
@@ -523,7 +523,7 @@ footer div p {
   }
 
   .section_features li figcaption p {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.6em;
     color: #898989;
   }
