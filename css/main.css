@@ -98,9 +98,12 @@ header li a:hover {
   z-index: 1;
 }
 
+.main_img .text_wrapper {
+  width: 100%;
+}
 .main_img h2 {
-  margin: 0;
-  width: 500px;
+  margin: auto;
+  width: 100%;
   font-size: 1.8em;
   font-weight: 300;
 }
@@ -573,10 +576,13 @@ footer div p {
     z-index: 1;
   }
 
+  .main_img .text_wrapper {
+    width: 100%;
+  }
   .main_img h2 {
-    margin: 0;
-    width: 400px;
-    font-size: 1.3em;
+    margin: auto;
+    width: 100%;
+    font-size: 1.8em;
     font-weight: 300;
   }
 
@@ -668,17 +674,19 @@ footer div p {
     z-index: 1;
   }
 
+  .main_img .text_wrapper {
+    width: 100%;
+  }
   .main_img h2 {
-    margin: 0;
-    width: 400px;
+    margin: auto;
+    width: 100%;
     font-size: 1.3em;
     font-weight: 300;
-    padding-top: 20px;
   }
 
   .main_img p {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 100;
     padding-top: 20px;
   }
@@ -695,10 +703,20 @@ footer div p {
 }
 
 @media (max-width: 360px) {
+  
   header a img{
     width: 40%;
   }
   header nav {
     width: 100%;
+  }
+  .main_img .text_wrapper {
+    width: 100%;
+  }
+  .main_img h2 {
+    margin: auto;
+    width: 90%;
+    font-size: 1.3em;
+    font-weight: 300;
   }
 }
