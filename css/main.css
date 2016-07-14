@@ -119,7 +119,7 @@ header li a:hover {
 
 .section_technology h2 {
   margin: 0;
-  padding: 28px 0;
+  padding: 120px 0 60px;
   background-color: white;
   color: #343333;
   text-align: center;
@@ -174,7 +174,7 @@ header li a:hover {
 
 .section_features h2 {
   margin: 0;
-  padding: 28px 0;
+  padding: 120px 0 60px;
   background-color: white;
   color: #343333;
   text-align: center;
@@ -254,7 +254,7 @@ header li a:hover {
 
 .section_partners_yfg h2 {
   margin: 0;
-  padding: 28px 0;
+  padding: 120px 0 60px;
   background-color: white;
   color: #343333;
   text-align: center;
@@ -301,7 +301,7 @@ header li a:hover {
 
 .section_partners_coinone h2 {
   margin: 0;
-  padding: 28px 0;
+  padding: 120px 0 60px;
   background-color: white;
   color: #343333;
   text-align: center;
@@ -645,6 +645,7 @@ footer div p {
 
 @media (max-width: 495px) {
   header a img {
+    padding-left: 20px;
     width: 40%
   }
   header nav {
@@ -705,6 +706,7 @@ footer div p {
 @media (max-width: 360px) {
   
   header a img{
+    padding-left: 8px;
     width: 40%;
   }
   header nav {
