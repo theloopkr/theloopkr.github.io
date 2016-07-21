@@ -70,7 +70,7 @@ header li a {
   color: white;
   font-weight: 200;
   display: block;
-  padding: 22px 18px 22px;
+  padding: 22px 15px 22px;
   transition: 0.3s all ease;
 }
 
@@ -82,7 +82,7 @@ header li a:hover {
 
 .main_img {
   position: relative;
-  padding-top: 50%;
+  padding-top: 40%;
   background: url("../img/main_header.png") center center no-repeat;
   background-size: 111%;
 }
@@ -489,6 +489,28 @@ footer div p {
 }
 
 @media (max-width: 768px) {
+  .main_img {
+    position: relative;
+    padding-top: 65%;
+    background: url("../img/main_header.png") center center no-repeat;
+    background-size: 154%;
+  }
+
+  .main_img::after {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(32, 35, 44, 0.3);
+    z-index: 1;
+  }
+
+  .main_img .text_wrapper {
+    width: 100%;
+  }
     /*---features---*/
   .feature_wrapper{
     width: 100%;
@@ -558,28 +580,6 @@ footer div p {
     display: none;
   }
   
-  .main_img {
-    position: relative;
-    padding-top: 70%;
-    background: url("../img/main_header.png") center center no-repeat;
-    background-size: 154%;
-  }
-
-  .main_img::after {
-    content:'';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(32, 35, 44, 0.3);
-    z-index: 1;
-  }
-
-  .main_img .text_wrapper {
-    width: 100%;
-  }
   .main_img h2 {
     margin: auto;
     width: 100%;
@@ -713,6 +713,12 @@ footer div p {
   header nav {
     width: 100%;
   }
+  
+  header nav li a {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  
   .main_img .text_wrapper {
     width: 100%;
   }
@@ -721,5 +727,12 @@ footer div p {
     width: 90%;
     font-size: 1.3em;
     font-weight: 300;
+  }
+}
+
+@media (max-width: 340px) {
+  header nav li a {
+    padding: 11px;
+    font-size: 0.95em;
   }
 }
