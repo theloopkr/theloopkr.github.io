@@ -357,10 +357,8 @@ footer {
   border-top: 10px solid #3A3E50;
 }
 
-footer img {
-  margin-left: 20px;
-  margin-bottom: 20px;
-  padding: 40px 20px 30px;
+footer .logo {
+  margin: 20px 20px;
   opacity: 0.8;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2)
 }
