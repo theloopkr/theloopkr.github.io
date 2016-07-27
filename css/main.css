@@ -344,8 +344,15 @@ header li a:hover {
 
 /*-----------footer------------*/
 
+.address {
+  padding: 14px 0;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 1.6em;
+}
+
 footer {
-  height: 300px;
+  height: 680px;
   background-color: #20232C;
   border-top: 10px solid #3A3E50;
 }
@@ -433,7 +440,28 @@ footer div p {
   100% {transform: translateY(0px);}
 }
 
+/*----map----*/
+
 /*------------meadia query------------*/
+
+@media (min-width: 1280px) {
+  .header {
+    background-color: rgb(32, 33, 38);
+  }
+  .header_wrapper{
+    width: 1100px;
+    margin: auto;
+  }
+  .main_img {
+    padding-top: 500px;
+    background-size: 120%;
+  }
+  
+  .section_technology, .section_features {
+    max-width: 1100px;
+    margin: auto;
+  }  
+}
 
 @media (max-width: 992px) {
   .main_img h2 {
@@ -729,4 +757,9 @@ footer div p {
     padding: 11px;
     font-size: 0.95em;
   }
+}
+
+
+@media (max-width: 360px) {
+  
 }
